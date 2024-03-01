@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+.resize_fit_center {
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
+}
+
+.bio {
+    text-align: center;
+}
+
+.pad {
+    padding-top: 24px !important;
+}
+
+.pad-bottom {
+    padding-bottom: 8px;
+}
+
+.pad-fa {
+    vertical-align: middle;
+}
+
+body {
+background: #0f161e;
+background-repeat: no-repeat;
+background-position: center center;
+color: #00a8ac;
+}
+
+h2 {
+    color: #D7CF07;
+}
+
+#email {
+unicode-bidi:bidi-override;
+direction: rtl;
+}
+
+.footer {
+background-color: #085766;
+color: #0f161e;
+}
+
+.showcenter {
+height: 100%;
+width: 100%;
+vertical-align: middle;
+text-align: center;
+}
+
+/* Button pretty: small zoom on hover */
+a.button:hover {
+    scale: 1.05;
+}
+
+/* Button pretty: button disabled warning */
+span.note-disabled::after {
+    text-align: center;
+    opacity: 0%;
+    transition: opacity 0.25s;
+    font-size: 0.8em;
+    font-weight: bolder;
+    padding-top: 0.55em;
+    position: absolute;
+    translate: -100% 0;
+    content: "Currently unavailable :(";
+    z-index: 1000;
+    width: 99%; /* Default for mobile/flat layout */
+    height: 2em;
+}
+
+@media (min-width: 550px) { /* For desktop/grid layout */
+    span.note-disabled::after {
+        width: 30.5%;
+    }
+}
+
+/* Button pretty: fade disabled button behind warning message */
+span.note-disabled:hover::after {
+    opacity: 100%;
+}
+
+span.note-disabled:hover>span.button.disabled {
+    color: #000;
+    opacity: 25%;
+}
+
+img {
+    transition: all 0.5s;
+    scale: 1;
+}
+
+img:active {
+    transition: all 0s;
+    opacity: 50%;
+    scale: 0.75;
+}
+
+/* Easter Egg */
+@keyframes pride {
+    0% {color: inherit; }
+16.66% {color: #55CDFC; }
+33.33% {color: #F7A8B8; }
+49.98% {color: #FFFFFF; }
+66.65% {color: #F7A8B8; }
+83.33% {color: #55CDFC; }
+  100% {color: inherit; }
+}
+
+@keyframes prideB {
+    0% {width: 0em; border-bottom: 0.05em solid #FFF; opacity: 0%;}
+16.66% {width: 6.70em; opacity: 100%;}
+83.33% {width: 6.70em; translate: -6.75em 1.5em; opacity: 100%;}
+  100% {width: 0em; translate: 0em 1.5em; border-bottom: 0.05em solid #FFF; opacity: 0%;}
+}
+
+.egg>span {
+    top: 0em;
+    transition: all 0.1s important!;
+    position: relative;
+}
+
+.egg::after {
+    transition: all 2.5s important!;
+    content: "";
+    position: absolute;
+    translate: -6.75em 1.5em;
+    width: 6.70em;
+    opacity: 0%;
+}
+
+.egg:hover::after {
+    animation-name: prideB;
+    animation-duration: 6s;
+}
+
+.egg:hover>:nth-child(1) {
+    animation-delay: 0.5s;
+}
+.egg:hover>:nth-child(2) {
+    animation-delay: 0.75s;
+}
+.egg:hover>:nth-child(3) {
+    animation-delay: 1s;
+}
+.egg:hover>:nth-child(4) {
+    animation-delay: 1.25s;
+}
+.egg:hover>:nth-child(6) {
+    animation-delay: 1.50s;
+}
+.egg:hover>:nth-child(7) {
+    animation-delay: 1.75s;
+}
+.egg:hover>:nth-child(8) {
+    animation-delay: 2s;
+}
+.egg:hover>:nth-child(9) {
+    animation-delay: 2.25s;
+}
+.egg:hover>:nth-child(10) {
+    animation-delay: 2.50s;
+}
+.egg:hover>:nth-child(11) {
+    animation-delay: 2.75s;
+}
+.egg:hover>:nth-child(12) {
+    animation-delay: 3s;
+}
+
+.egg:hover>* {
+    animation-name: pride;
+    animation-duration: 6s;
+}
