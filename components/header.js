@@ -5,7 +5,7 @@ import logoImage from '../images/ELSEIFDraft.png'
 
 class Logo extends Component {
   render() {
-    return  <div className="one-half column showcenter u-max-full-width" style={{marginTop: '1.75em', marginBottom: '2em'}}>
+    return  <div className="twelve columns showcenter u-max-full-width" style={{marginTop: '1.75em', marginBottom: '2em'}}>
               <Image className="resize_fit_center showcenter" src={logoImage} width={882} height={216} layout='responsive' objectFit='contain' alt="Logo" placeholder='blur' />
             </div>
   }
@@ -15,7 +15,7 @@ class Header extends Component {
   render() {
     return  <Row pad>
               <Logo />
-              <div className="one-half column bio pad">
+              <div className="twelve columns bio pad">
                 <h2>
                   Hi, there!
                 </h2>

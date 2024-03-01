@@ -31,19 +31,16 @@ export default function Home() {
   return (
     <div>
     <Head>
-      <title>Eden Simmons - {randomTitle()}</title>
+      <title>{"{ELSEIF}"}</title>
     </Head>
     <Container pad={true}>
       <Header />
-      <Row pad={true}>
-        <YoutubePlayer videoID='lSC32D29k68' videoTitle='Falling (W8 Remix) {ELSEIF Edit}' />
-      </Row>
       <SmallHeading>
         Socials
       </SmallHeading>
       <Row>
         <LinkButton width='four' href='https://youtube.com/c/ELSEIFedm' icon={faYoutube} label='YouTube' />
-        <LinkButton width='four' href='https://twitter.com/link2x101' icon={faTwitter} label='Twitter' />
+        <LinkButton width='four' href='https://twitter.com/ELSEIFedm' icon={faTwitter} label='Twitter' />
         <LinkButton width='four' href='https://fb.com/ELSEIFedm' icon={faFacebook} label='Facebook' />
       </Row>
       <SmallHeading>
@@ -66,22 +63,6 @@ export default function Home() {
         <LinkButton width='four' href='https://trshfmme.com/' icon={faTShirt} label='Merch' />
       </Row>
       <br />
-      <SmallHeading>
-        Other Bits
-      </SmallHeading>
-      <Row pad={true}>
-        <LinkButton width='six' href='https://github.com/link2x' icon={faGithub} label='GitHub' />
-        <Column width='six' center={false}>
-          I write code sometimes, it lives here.
-        </Column>
-      </Row>
-      <Row pad={true}>
-        <LinkButton width='six' href='https://www.linkedin.com/in/eden-simmons-174b118b/' icon={faLinkedin} label='LinkedIn' />
-        <Column width='six' center={false}>
-          Resume / Work Experience.
-        </Column>
-      </Row>
-      <Row pad={true} />
     </Container>
     <Footer />
     <CookieConsent enableDeclineButton onAccept={handleAcceptCookie}>
