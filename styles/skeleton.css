@@ -157,9 +157,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #1AC8ED; }
 a:hover {
-  color: #0FA0CE;
+  color: #FF3562;
   opacity: 100%; }
 
 
@@ -202,15 +202,15 @@ input[type="button"]:focus {
   color: #333;
   border-color: #888;
   outline: 0;
-  opacity: 75%; }
+   }
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: #0f161e;
-  background-color: #00a8ac;
-  border-color: #00a8ac; }
+  color: #C0C0CA;
+  background-color: #30303A;
+  border-color: #60606A; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -221,9 +221,9 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  color: #085766;
-  background-color: #00a8ac;
-  border-color: #00a8ac; }
+  color: #FF3562;
+  background-color: #30303A;
+  border-color: #60606A; }
 
 
 /* Forms

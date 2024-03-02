@@ -23,14 +23,14 @@
 }
 
 body {
-background: #0f161e;
+background: #151418;
 background-repeat: no-repeat;
 background-position: center center;
-color: #00a8ac;
+color: #C0C0CA;
 }
 
 h2 {
-    color: #D7CF07;
+    color: #D2F05B;
 }
 
 #email {
@@ -39,8 +39,8 @@ direction: rtl;
 }
 
 .footer {
-background-color: #085766;
-color: #0f161e;
+background-color: #202024;
+color: #80808A;
 }
 
 .showcenter {

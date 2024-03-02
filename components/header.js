@@ -20,8 +20,8 @@ class Header extends Component {
                   Hi, there!
                 </h2>
                 <p>
-                  I&apos;m Eden!<br />
-                  I&apos;m a multi-genre song-writer and producer.<br />
+                  I&apos;m ELSEIF!<br />
+                  I&apos;m an EDM producer.<br />
                   I&apos;ve been making music since 2006.<br />
                 </p>
               </div>

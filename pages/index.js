@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useEffect } from 'react'
-import { faApple, faAmazon, faSpotify, faBandcamp, faTwitter, faFacebook, faYoutube, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faApple, faAmazon, faSpotify, faBandcamp, faTwitter, faFacebook, faYoutube, faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faCoffee, faTShirt } from '@fortawesome/free-solid-svg-icons'
 import YoutubePlayer from '../components/youtubeplayer.js'
 import { Container, Row, Column } from '../components/skeletonhelpers.js'
@@ -39,9 +39,10 @@ export default function Home() {
         Socials
       </SmallHeading>
       <Row>
-        <LinkButton width='four' href='https://youtube.com/c/ELSEIFedm' icon={faYoutube} label='YouTube' />
-        <LinkButton width='four' href='https://twitter.com/ELSEIFedm' icon={faTwitter} label='Twitter' />
-        <LinkButton width='four' href='https://fb.com/ELSEIFedm' icon={faFacebook} label='Facebook' />
+        <LinkButton width='three' href='https://youtube.com/c/ELSEIFedm' icon={faYoutube} label='YouTube' />
+        <LinkButton width='three' href='https://instagram.com/ELSEIFedm' icon={faInstagram} label='Instagram' />
+        <LinkButton width='three' href='https://twitter.com/ELSEIFedm' icon={faTwitter} label='Twitter' />
+        <LinkButton width='three' href='https://fb.com/ELSEIFedm' icon={faFacebook} label='Facebook' />
       </Row>
       <SmallHeading>
         Subscriptions
@@ -58,9 +59,9 @@ export default function Home() {
         <LinkButton width='four' href='https://elseif.bandcamp.com' icon={faBandcamp} label='Bandcamp' />
       </Row>
       <Row pad={true}>
-        <LinkButton width='four' href='https://music.apple.com/us/album/brotherhood-single/1585752974?uo=4' icon={faApple} label='Apple Music' />
+        <LinkButton width='four' href='https://music.apple.com/us/album/re-boot-phase-1/1715559646' icon={faApple} label='Apple Music' />
         <LinkButton width='four' href='https://tidal.com/browse/artist/35089903' label='Tidal' />
-        <LinkButton width='four' href='https://trshfmme.com/' icon={faTShirt} label='Merch' />
+        <LinkButton width='four' href='https://merch.elseif.social/' icon={faTShirt} label='Merch' />
       </Row>
       <br />
     </Container>
