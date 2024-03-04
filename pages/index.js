@@ -8,7 +8,6 @@ import Header from '../components/header.js'
 import Footer from '../components/footer.js'
 import LinkButton from '../components/button.js'
 import SmallHeading from '../components/smallheading.js'
-import { randomTitle } from '../functions/randomtitle.js'
 import CookieConsent, { getCookieConsentValue, Cookies } from 'react-cookie-consent'
 import { initGA } from '../functions/ga-utils'
 
@@ -39,10 +38,13 @@ export default function Home() {
         Socials
       </SmallHeading>
       <Row>
-        <LinkButton width='three' href='https://youtube.com/c/ELSEIFedm' icon={faYoutube} label='YouTube' />
-        <LinkButton width='three' href='https://instagram.com/ELSEIFedm' icon={faInstagram} label='Instagram' />
-        <LinkButton width='three' href='https://twitter.com/ELSEIFedm' icon={faTwitter} label='Twitter' />
-        <LinkButton width='three' href='https://fb.com/ELSEIFedm' icon={faFacebook} label='Facebook' />
+        <LinkButton width='six' href='https://youtube.com/c/ELSEIFedm' icon={faYoutube} label='YouTube' />
+        <LinkButton width='six' href='https://instagram.com/ELSEIFedm' icon={faInstagram} label='Instagram' />
+      </Row>
+      <Row pad>
+        <LinkButton width='four' href='https://twitter.com/ELSEIFedm' icon={faTwitter} label='Twitter' />
+        <LinkButton width='four' href='https://bsky.app/profile/elseif.social' label='Bluesky' />
+        <LinkButton width='four' href='https://fb.com/ELSEIFedm' icon={faFacebook} label='Facebook' />
       </Row>
       <SmallHeading>
         Subscriptions
