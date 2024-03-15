@@ -51,8 +51,8 @@ class Footer extends Component {
                   <Column width='four'>
                     <p>
                       <FontAwesomeIcon icon={ faEnvelope } /><br />
-                      Booking: <span id="email">su.x2knil@tmgm</span><br />
-                      Others: <span id="email">su.x2knil@nede</span>
+                      Booking: <span id="email">laicos.fiesle@tmgm</span><br />
+                      Others: <span id="email">laicos.fiesle@nede</span>
                     </p>
                   </Column>
                 </Row>
