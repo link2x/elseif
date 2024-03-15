@@ -56,13 +56,13 @@ text-align: center;
 
 a {
     font-family: "jaf-mashine", sans-serif;
-    font-weight: 300 !important;
+    font-weight: 400 !important;
     font-style: normal;
 }
 
 /* Button pretty: small zoom on hover */
 a.button:hover {
-    scale: 1.05;
+    scale: 1.075;
 }
 
 /* Button pretty: button disabled warning */
