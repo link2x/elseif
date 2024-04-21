@@ -34,6 +34,9 @@ export default function Home() {
     </Head>
     <Container pad={true}>
       <Header />
+      <Row pad={true}>
+        <YoutubePlayer videoID='Y-Dy9mR4jnY' videoTitle='{ELSEIF} - HEAL | Aural Alliance (Audio)' />
+      </Row>
       <SmallHeading>
         Socials
       </SmallHeading>

@@ -21,7 +21,8 @@
     "react-dom": "18.2.0",
     "react-ga4": "^1.4.1",
     "react-lite-youtube-embed": "^2.3.1",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "eslint": "^8.21.0",
