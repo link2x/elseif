@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useEffect } from 'react'
-import { faApple, faAmazon, faSpotify, faBandcamp, faTwitter, faFacebook, faYoutube, faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faApple, faAmazon, faSpotify, faBandcamp, faTwitter, faFacebook, faYoutube, faGithub, faLinkedin, faInstagram, faSoundcloud } from '@fortawesome/free-brands-svg-icons'
 import { faCoffee, faTShirt } from '@fortawesome/free-solid-svg-icons'
 import YoutubePlayer from '../components/youtubeplayer.js'
 import { Container, Row, Column } from '../components/skeletonhelpers.js'
@@ -35,7 +35,7 @@ export default function Home() {
     <Container pad={true}>
       <Header />
       <Row pad={true}>
-        <YoutubePlayer videoID='Y-Dy9mR4jnY' videoTitle='{ELSEIF} - HEAL | Aural Alliance (Audio)' />
+        <YoutubePlayer videoID='zzohWTBTJsk' videoTitle='{ELSEIF} @ Cease & Desist Crystal Chasm' />
       </Row>
       <SmallHeading>
         Socials
@@ -56,8 +56,12 @@ export default function Home() {
         <LinkButton width='twelve' href='https://ko-fi.com/00eden' icon={faCoffee} label='Ko-fi'/>
       </Row>
       <SmallHeading>
-        Stores
+        Stores and Sounds
       </SmallHeading>
+      <Row>
+        <LinkButton width='twelve' href='https://soundcloud.com/elseifedm' icon={faSoundcloud} label='Soundcloud' />
+      </Row>
+      <br />
       <Row>
         <LinkButton width='four' href='https://open.spotify.com/artist/73yAfTEIyfHrWivS2TOTLg?si=yai3B_R4QFSn2ajCtxwE8g' icon={faSpotify} label='Spotify' />
         <LinkButton width='four' href='https://music.youtube.com/channel/UCIVwLsPG9eEm-A3f2-axWPg' icon={faYoutube} label='YouTube Music' />
