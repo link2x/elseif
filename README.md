@@ -1,4 +1,4 @@
-# link2x Homepage
+# {ELSEIF} Homepage
 
 *People like to put their websites on GitHub, so now I did too!*
 
