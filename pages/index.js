@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useEffect } from 'react'
-import { faApple, faAmazon, faSpotify, faBandcamp, faTwitter, faFacebook, faYoutube, faGithub, faLinkedin, faInstagram, faSoundcloud } from '@fortawesome/free-brands-svg-icons'
+import { faApple, faAmazon, faSpotify, faBandcamp, faTwitter, faFacebook, faYoutube, faGithub, faLinkedin, faInstagram, faSoundcloud, faDiscord, faTelegram } from '@fortawesome/free-brands-svg-icons'
 import { faCoffee, faTShirt } from '@fortawesome/free-solid-svg-icons'
 import YoutubePlayer from '../components/youtubeplayer.js'
 import { Container, Row, Column } from '../components/skeletonhelpers.js'
@@ -41,8 +41,12 @@ export default function Home() {
         Socials
       </SmallHeading>
       <Row>
-        <LinkButton width='six' href='https://youtube.com/c/ELSEIFedm' icon={faYoutube} label='YouTube' />
-        <LinkButton width='six' href='https://instagram.com/ELSEIFedm' icon={faInstagram} label='Instagram' />
+        <LinkButton width='twelve' href='https://discord.gg/SJVFQDG3cR' icon={faDiscord} label='Discord' />
+      </Row>
+      <Row pad>
+        <LinkButton width='four' href='https://youtube.com/c/ELSEIFedm' icon={faYoutube} label='YouTube' />
+        <LinkButton width='four' href='https://t.me/elseifedm' icon={faTelegram} label='Telegram' />
+        <LinkButton width='four' href='https://instagram.com/ELSEIFedm' icon={faInstagram} label='Instagram' />
       </Row>
       <Row pad>
         <LinkButton width='four' href='https://twitter.com/ELSEIFedm' icon={faTwitter} label='Twitter' />
