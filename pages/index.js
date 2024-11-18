@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useEffect } from 'react'
-import { faApple, faAmazon, faSpotify, faBandcamp, faTwitter, faFacebook, faYoutube, faGithub, faLinkedin, faInstagram, faSoundcloud, faDiscord, faTelegram } from '@fortawesome/free-brands-svg-icons'
-import { faCoffee, faTShirt } from '@fortawesome/free-solid-svg-icons'
+import { faApple, faAmazon, faSpotify, faBandcamp, faTwitter, faFacebook, faYoutube, faGithub, faLinkedin, faInstagram, faSoundcloud, faDiscord, faTelegram, faBluesky } from '@fortawesome/free-brands-svg-icons'
+import { faCoffee, faTShirt, faVrCardboard } from '@fortawesome/free-solid-svg-icons'
 import YoutubePlayer from '../components/youtubeplayer.js'
 import { Container, Row, Column } from '../components/skeletonhelpers.js'
 import Header from '../components/header.js'
@@ -35,23 +35,30 @@ export default function Home() {
     <Container pad={true}>
       <Header />
       <Row pad={true}>
-        <YoutubePlayer videoID='zzohWTBTJsk' videoTitle='{ELSEIF} @ Cease & Desist Crystal Chasm' />
+        <YoutubePlayer videoID='9KrHhTJBEZc' videoTitle='{ELSEIF} @ GROWL' />
       </Row>
       <SmallHeading>
         Socials
       </SmallHeading>
       <Row>
-        <LinkButton width='twelve' href='https://discord.gg/SJVFQDG3cR' icon={faDiscord} label='Discord' />
+        <LinkButton width='twelve' href='https://discord.gg/SJVFQDG3cR' icon={faDiscord} label='Discord Server' />
       </Row>
       <Row pad>
-        <LinkButton width='four' href='https://youtube.com/c/ELSEIFedm' icon={faYoutube} label='YouTube' />
-        <LinkButton width='four' href='https://t.me/elseifedm' icon={faTelegram} label='Telegram' />
-        <LinkButton width='four' href='https://instagram.com/ELSEIFedm' icon={faInstagram} label='Instagram' />
+        <LinkButton width='six' href='https://t.me/elseifedm' icon={faTelegram} label='Telegram Group' />
+        <LinkButton width='six' href='https://t.me/Siytron' icon={faTelegram} label='Personal Telegram' />
+      </Row>
+      <Row pad>
+        <LinkButton width='six' href='https://youtube.com/c/ELSEIFedm' icon={faYoutube} label='YouTube' />
+        <LinkButton width='six' href='https://instagram.com/ELSEIFedm' icon={faInstagram} label='Instagram' />
       </Row>
       <Row pad>
         <LinkButton width='four' href='https://twitter.com/ELSEIFedm' icon={faTwitter} label='Twitter' />
-        <LinkButton width='four' href='https://bsky.app/profile/elseif.social' label='Bluesky' />
+        <LinkButton width='four' href='https://bsky.app/profile/elseif.social' icon={faBluesky} label='Bluesky' />
         <LinkButton width='four' href='https://fb.com/ELSEIFedm' icon={faFacebook} label='Facebook' />
+      </Row>
+      <Row pad>
+        <LinkButton width='six' href='https://vrc.group/ELSEIF.4356' icon={faVrCardboard} label='VRChat Group' />
+        <LinkButton width='six' href='https://vrchat.com/home/user/usr_14a00c8f-642e-4cd0-91e0-d848f5841e17' icon={faVrCardboard} label='VRChat Profile' />
       </Row>
       <SmallHeading>
         Subscriptions

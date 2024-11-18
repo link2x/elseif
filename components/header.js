@@ -20,7 +20,7 @@ class Header extends Component {
                   Hi, there!
                 </h2>
                 <p>
-                  {"I'm ELSEIF."}<br />
+                  {"I'm "}<b>{"{ELSEIF}"}</b>{"."}<br />
                   {"I'm an electronic musician and producer based out of western Connecticut."}<br />
                   {"Here's some links to my stuff across the internet!"}
                 </p>
