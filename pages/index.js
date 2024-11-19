@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useEffect } from 'react'
-import { faApple, faAmazon, faSpotify, faBandcamp, faTwitter, faFacebook, faYoutube, faGithub, faLinkedin, faInstagram, faSoundcloud, faDiscord, faTelegram, faBluesky } from '@fortawesome/free-brands-svg-icons'
+import { faApple, faAmazon, faSpotify, faBandcamp, faTwitter, faFacebook, faYoutube, faGithub, faLinkedin, faInstagram, faSoundcloud, faDiscord, faTelegram, faBluesky, faPaypal } from '@fortawesome/free-brands-svg-icons'
 import { faCoffee, faTShirt, faVrCardboard } from '@fortawesome/free-solid-svg-icons'
 import YoutubePlayer from '../components/youtubeplayer.js'
 import { Container, Row, Column } from '../components/skeletonhelpers.js'
@@ -38,6 +38,12 @@ export default function Home() {
         <YoutubePlayer videoID='9KrHhTJBEZc' videoTitle='{ELSEIF} @ GROWL' />
       </Row>
       <SmallHeading>
+        Merch
+      </SmallHeading>
+      <Row>
+        <LinkButton width='twelve' href='https://merch.elseif.social/' icon={faTShirt} label='Merch' />
+      </Row>
+      <SmallHeading>
         Socials
       </SmallHeading>
       <Row>
@@ -61,27 +67,26 @@ export default function Home() {
         <LinkButton width='six' href='https://vrchat.com/home/user/usr_14a00c8f-642e-4cd0-91e0-d848f5841e17' icon={faVrCardboard} label='VRChat Profile' />
       </Row>
       <SmallHeading>
-        Subscriptions
+        Subscriptions and Donations
       </SmallHeading>
       <Row>
-        <LinkButton width='twelve' href='https://ko-fi.com/00eden' icon={faCoffee} label='Ko-fi'/>
+        <LinkButton width='six' href='https://ko-fi.com/ELSEIFedm' icon={faCoffee} label='Ko-fi' />
+        <LinkButton width='six' href='https://www.paypal.com/donate/?hosted_button_id=2Z3X6H4FVE87S' icon={faPaypal} label='PayPal' />
       </Row>
       <SmallHeading>
         Stores and Sounds
       </SmallHeading>
       <Row>
-        <LinkButton width='twelve' href='https://soundcloud.com/elseifedm' icon={faSoundcloud} label='Soundcloud' />
+        <LinkButton width='twelve' href='https://elseif.bandcamp.com' icon={faBandcamp} label='Bandcamp' />
       </Row>
-      <br />
-      <Row>
-        <LinkButton width='four' href='https://open.spotify.com/artist/73yAfTEIyfHrWivS2TOTLg?si=yai3B_R4QFSn2ajCtxwE8g' icon={faSpotify} label='Spotify' />
-        <LinkButton width='four' href='https://music.youtube.com/channel/UCIVwLsPG9eEm-A3f2-axWPg' icon={faYoutube} label='YouTube Music' />
-        <LinkButton width='four' href='https://elseif.bandcamp.com' icon={faBandcamp} label='Bandcamp' />
+      <Row pad>
+        <LinkButton width='six' href='https://soundcloud.com/elseifedm' icon={faSoundcloud} label='Soundcloud' />
+        <LinkButton width='six' href='https://open.spotify.com/artist/73yAfTEIyfHrWivS2TOTLg?si=yai3B_R4QFSn2ajCtxwE8g' icon={faSpotify} label='Spotify' />
       </Row>
-      <Row pad={true}>
+      <Row pad>
         <LinkButton width='four' href='https://music.apple.com/us/album/re-boot-phase-1/1715559646' icon={faApple} label='Apple Music' />
         <LinkButton width='four' href='https://tidal.com/browse/artist/35089903' label='Tidal' />
-        <LinkButton width='four' href='https://merch.elseif.social/' icon={faTShirt} label='Merch' />
+        <LinkButton width='four' href='https://music.youtube.com/channel/UCIVwLsPG9eEm-A3f2-axWPg' icon={faYoutube} label='YouTube Music' />
       </Row>
       <br />
     </Container>
